@@ -1,0 +1,625 @@
+/* src/components/common/FloatingButtons.css */
+
+/* ============================================================
+   FLOATING BUTTONS CONTAINER
+   ============================================================ */
+.floating-buttons {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ============================================================
+   TOGGLE BUTTON (Main Menu)
+   ============================================================ */
+.floating-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #D32F2F, #B71C1C);
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(211, 47, 47, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+  order: 2;
+}
+
+.floating-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(211, 47, 47, 0.6);
+}
+
+.floating-toggle.open {
+  background: linear-gradient(135deg, #1A237E, #0D1445);
+  box-shadow: 0 4px 20px rgba(26, 35, 126, 0.4);
+  transform: rotate(90deg);
+}
+
+.floating-toggle.open:hover {
+  box-shadow: 0 6px 30px rgba(26, 35, 126, 0.6);
+}
+
+/* ============================================================
+   SOCIAL ICONS MENU
+   ============================================================ */
+.floating-social-menu {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(20px) scale(0.8);
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  order: 0;
+  margin-bottom: 0;
+}
+
+.floating-social-menu.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+.floating-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.3s ease;
+  transition-delay: var(--delay, 0s);
+}
+
+.floating-social-menu.open .floating-social-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.floating-social-item .social-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--social-color, #1A237E);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+}
+
+.floating-social-item:hover .social-icon-wrapper {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border-color: var(--social-color, #1A237E);
+  background: var(--social-color, #1A237E);
+  color: #FFFFFF;
+}
+
+.floating-social-item .social-tooltip {
+  background: #1A237E;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.floating-social-item:hover .social-tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================================================
+   WHATSAPP BUTTON
+   ============================================================ */
+.floating-whatsapp-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  order: 1;
+}
+
+.floating-tooltip {
+  background: #1A237E;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.3s ease;
+  position: relative;
+  max-width: 200px;
+  text-align: center;
+}
+
+.floating-tooltip-arrow {
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: #1A237E;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.floating-whatsapp {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.floating-whatsapp.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.floating-whatsapp.hovered {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+.floating-whatsapp .whatsapp-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.floating-whatsapp .whatsapp-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  background: #D32F2F;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* ============================================================
+   SCROLL TO TOP BUTTON
+   ============================================================ */
+.floating-scroll-top {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #1A237E;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+  order: -1;
+}
+
+.floating-scroll-top.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+}
+
+.floating-scroll-top:hover {
+  transform: scale(1.1) translateY(-3px);
+  background: #D32F2F;
+  box-shadow: 0 6px 25px rgba(211, 47, 47, 0.4);
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN - IMPROVED POSITIONING
+   ============================================================ */
+
+/* ===== DESKTOP (1024px and above) ===== */
+@media (min-width: 1024px) {
+  .floating-buttons {
+    bottom: 40px;
+    right: 0;
+    gap: 14px;
+  }
+}
+
+/* ===== TABLET LANDSCAPE (768px - 1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .floating-buttons {
+    bottom: 30px;
+    right: 0;
+    gap: 12px;
+  }
+
+  .floating-toggle {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+
+  .floating-whatsapp {
+    width: 52px;
+    height: 52px;
+    font-size: 28px;
+  }
+
+  .floating-social-item .social-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  .floating-scroll-top {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .floating-social-menu {
+    gap: 8px;
+  }
+}
+
+/* ===== TABLET PORTRAIT (480px - 767px) ===== */
+@media (min-width: 480px) and (max-width: 767px) {
+  .floating-buttons {
+    bottom: 25px;
+    right: 0;
+    gap: 10px;
+  }
+
+  .floating-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .floating-whatsapp {
+    width: 48px;
+    height: 48px;
+    font-size: 26px;
+  }
+
+  .floating-social-item .social-icon-wrapper {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .floating-scroll-top {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+  }
+
+  .floating-social-menu {
+    gap: 8px;
+  }
+
+  .floating-tooltip {
+    font-size: 11px;
+    padding: 6px 12px;
+    max-width: 160px;
+  }
+
+  .floating-social-item .social-tooltip {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}
+
+/* ===== MOBILE (below 480px) ===== */
+@media (max-width: 479px) {
+  .floating-buttons {
+    bottom: 20px;
+    right: 0;
+    gap: 8px;
+  }
+
+  .floating-toggle {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .floating-whatsapp {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+
+  .floating-social-item .social-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .floating-scroll-top {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .floating-social-menu {
+    gap: 6px;
+  }
+
+  .floating-tooltip {
+    font-size: 10px;
+    padding: 4px 10px;
+    max-width: 140px;
+    margin-bottom: 6px;
+  }
+
+  .floating-social-item .social-tooltip {
+    font-size: 9px;
+    padding: 2px 8px;
+  }
+
+  .floating-whatsapp .whatsapp-badge {
+    width: 16px;
+    height: 16px;
+    font-size: 8px;
+    top: -3px;
+    right: -3px;
+  }
+
+  .floating-whatsapp .whatsapp-pulse {
+    border-width: 1.5px;
+  }
+}
+
+/* ===== EXTRA SMALL MOBILE (below 360px) ===== */
+@media (max-width: 359px) {
+  .floating-buttons {
+    bottom: 16px;
+    right:0;
+    gap: 6px;
+  }
+
+  .floating-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .floating-whatsapp {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .floating-social-item .social-icon-wrapper {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .floating-scroll-top {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .floating-social-menu {
+    gap: 5px;
+  }
+
+  .floating-tooltip {
+    font-size: 9px;
+    padding: 3px 8px;
+    max-width: 120px;
+    margin-bottom: 4px;
+  }
+
+  .floating-social-item .social-tooltip {
+    font-size: 8px;
+    padding: 2px 6px;
+  }
+
+  .floating-whatsapp .whatsapp-badge {
+    width: 14px;
+    height: 14px;
+    font-size: 7px;
+    top: -2px;
+    right: -2px;
+    border-width: 1.5px;
+  }
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.floating-whatsapp.visible {
+  animation: fadeInScale 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.floating-scroll-top.visible {
+  animation: fadeInScale 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ============================================================
+   HOVER EFFECTS FOR SOCIAL ICONS
+   ============================================================ */
+.floating-social-item:nth-child(1):hover .social-icon-wrapper {
+  background: #1877F2;
+  border-color: #1877F2;
+  color: #FFFFFF;
+}
+
+.floating-social-item:nth-child(2):hover .social-icon-wrapper {
+  background: #E4405F;
+  border-color: #E4405F;
+  color: #FFFFFF;
+}
+
+.floating-social-item:nth-child(3):hover .social-icon-wrapper {
+  background: #000000;
+  border-color: #000000;
+  color: #FFFFFF;
+}
+
+.floating-social-item:nth-child(4):hover .social-icon-wrapper {
+  background: #FF0000;
+  border-color: #FF0000;
+  color: #FFFFFF;
+}
+
+/* ============================================================
+   DARK MODE SUPPORT (Optional)
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  .floating-social-item .social-icon-wrapper {
+    background: #1A1A2E;
+    color: #FFFFFF;
+  }
+
+  .floating-social-item .social-tooltip {
+    background: #1A1A2E;
+    color: #FFFFFF;
+  }
+
+  .floating-tooltip {
+    background: #1A1A2E;
+  }
+
+  .floating-tooltip-arrow {
+    background: #1A1A2E;
+  }
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+@media print {
+  .floating-buttons {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ============================================================ */
+@media (hover: none) {
+  .floating-toggle:active {
+    transform: scale(0.95);
+  }
+  
+  .floating-whatsapp:active {
+    transform: scale(0.95);
+  }
+  
+  .floating-scroll-top:active {
+    transform: scale(0.95);
+  }
+  
+  .floating-social-item:active .social-icon-wrapper {
+    transform: scale(0.95);
+  }
+}
+
+/* ============================================================
+   SAFE AREA INSETS FOR NOTCHED DEVICES
+   ============================================================ */
+@supports (padding: max(0px)) {
+  .floating-buttons {
+    bottom: max(30px, env(safe-area-inset-bottom, 30px));
+    right: max(20px, env(safe-area-inset-right, 0));
+  }
+  
+  @media (max-width: 479px) {
+    .floating-buttons {
+      bottom: max(20px, env(safe-area-inset-bottom, 20px));
+      right: max(12px, env(safe-area-inset-right, 0));
+    }
+  }
+}

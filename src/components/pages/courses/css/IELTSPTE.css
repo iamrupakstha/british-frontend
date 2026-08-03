@@ -1,0 +1,671 @@
+/* src/components/pages/courses/css/IELTSPTE.css */
+
+/* ============================================================
+   ROOT VARIABLES
+   ============================================================ */
+:root {
+  --color-primary: #1A237E;
+  --color-accent: #D32F2F;
+  --color-gold: #FFB800;
+  --color-white: #FFFFFF;
+  --color-gray: #F8F9FA;
+  --color-border: #E8ECF0;
+  --color-text: #1A237E;
+  --color-text-light: #6B7280;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.10);
+  --radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================================
+   SECTION HEADER
+   ============================================================ */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(211, 47, 47, 0.08);
+  padding: 4px 16px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.courses-hero {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.courses-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.courses-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(26, 35, 126, 0.85) 0%, rgba(26, 35, 126, 0.4) 100%);
+  z-index: 1;
+}
+
+.courses-hero-content {
+  position: relative;
+  z-index: 2;
+  color: var(--color-white);
+  width: 100%;
+  text-align: center;
+}
+
+.courses-hero-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-gold);
+  background: rgba(255, 184, 0, 0.15);
+  padding: 4px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.courses-hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+}
+
+.courses-hero-content p {
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   INTRODUCTION
+   ============================================================ */
+.intro-section {
+  padding: 60px 0;
+  background: var(--color-white);
+}
+
+.intro-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 16px 0;
+}
+
+.intro-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin: 0 0 32px 0;
+}
+
+.intro-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  background: var(--color-gray);
+  border-radius: var(--radius);
+}
+
+.stat-number {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+/* ============================================================
+   TABS
+   ============================================================ */
+.tabs-section {
+  padding: 0;
+  background: var(--color-gray);
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 12px 0;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tab-btn:hover {
+  background: rgba(211, 47, 47, 0.06);
+  color: var(--color-accent);
+}
+
+.tab-btn.active {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* ============================================================
+   TAB CONTENT
+   ============================================================ */
+.tab-content-section {
+  padding: 60px 0;
+  background: var(--color-white);
+}
+
+.tab-panel {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== OVERVIEW ===== */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.overview-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 16px 0;
+}
+
+.overview-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin: 0 0 24px 0;
+}
+
+.overview-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  background: var(--color-gray);
+  border-radius: var(--radius);
+}
+
+.highlight-item svg {
+  color: var(--color-accent);
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.highlight-item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 2px 0;
+}
+
+.highlight-item p {
+  font-size: 12px;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.overview-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  height: 350px;
+  object-fit: cover;
+  box-shadow: var(--shadow-hover);
+}
+
+/* ===== IELTS / PTE ===== */
+.test-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.test-header p {
+  font-size: 16px;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin: 0 0 24px 0;
+}
+
+.test-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.test-info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.info-card {
+  text-align: center;
+  padding: 24px;
+  background: var(--color-gray);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.info-icon {
+  font-size: 28px;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.info-card h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin: 0 0 4px 0;
+}
+
+.info-card p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.test-sections h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 16px 0;
+}
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.section-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px;
+  background: var(--color-gray);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.section-card:hover {
+  background: rgba(255, 184, 0, 0.06);
+}
+
+.section-icon {
+  font-size: 22px;
+  color: var(--color-accent);
+  margin-top: 2px;
+}
+
+.section-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 4px 0;
+}
+
+.section-card p {
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.test-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.test-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.test-features li svg {
+  color: var(--color-gold);
+}
+
+/* ===== COMPARE TABLE ===== */
+.compare-panel h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.compare-panel p {
+  font-size: 16px;
+  color: var(--color-text-light);
+  margin: 0 0 32px 0;
+}
+
+.compare-table-wrapper {
+  overflow-x: auto;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.compare-table thead {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.compare-table th {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.compare-table td {
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.compare-table tbody tr:hover {
+  background: rgba(255, 184, 0, 0.05);
+}
+
+.compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ============================================================
+   WHY CHOOSE US
+   ============================================================ */
+.why-section {
+  padding: 60px 0;
+  background: var(--color-gray);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.why-item {
+  text-align: center;
+  padding: 32px 20px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.why-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.why-icon {
+  font-size: 32px;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.why-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.why-item p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+.cta-section {
+  padding: 60px 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.cta-content p {
+  font-size: 18px;
+  opacity: 0.85;
+  margin: 0 0 24px 0;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: var(--color-gold);
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: #E6A500;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 184, 0, 0.3);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .overview-image img {
+    height: 250px;
+  }
+  .sections-grid {
+    grid-template-columns: 1fr;
+  }
+  .test-info-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-hero {
+    height: 250px;
+  }
+  .courses-hero-content h1 {
+    font-size: 28px;
+  }
+  .tabs-nav {
+    gap: 4px;
+    padding: 8px 0;
+  }
+  .tab-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .intro-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .test-features {
+    grid-template-columns: 1fr;
+  }
+  .test-info-cards {
+    grid-template-columns: 1fr;
+  }
+  .compare-table th,
+  .compare-table td {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  .overview-image img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-hero {
+    height: 200px;
+  }
+  .courses-hero-content h1 {
+    font-size: 22px;
+  }
+  .courses-hero-content p {
+    font-size: 13px;
+  }
+  .intro-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stat-item {
+    padding: 12px;
+  }
+  .stat-number {
+    font-size: 22px;
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .tab-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  .cta-content h2 {
+    font-size: 24px;
+  }
+  .cta-content p {
+    font-size: 15px;
+  }
+  .compare-table th,
+  .compare-table td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}

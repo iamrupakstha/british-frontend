@@ -1,0 +1,290 @@
+/* src/components/common/Spinner.css */
+
+/* ============================================================
+   SPINNER CONTAINER
+   ============================================================ */
+.spinner-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+.spinner-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ============================================================
+   SPINNER RING
+   ============================================================ */
+.spinner-ring {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* Track Ring (Background) */
+.spinner-ring-track {
+  position: absolute;
+  inset: 0;
+  border: 4px solid rgba(255, 184, 0, 0.15);
+  border-radius: 50%;
+}
+
+/* Animated Ring */
+.spinner-ring-animated {
+  position: absolute;
+  inset: 0;
+  border: 4px solid transparent;
+  border-top-color: #D32F2F;
+  border-right-color: #FFB800;
+  border-bottom-color: #D32F2F;
+  border-left-color: #FFB800;
+  border-radius: 50%;
+  animation: spin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+/* ============================================================
+   SPINNER LOGO
+   ============================================================ */
+.spinner-logo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.spinner-logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ============================================================
+   SPINNER TEXT
+   ============================================================ */
+.spinner-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1A237E;
+  opacity: 0.7;
+  margin: 0;
+  letter-spacing: 0.5px;
+  animation: pulseText 1.5s ease-in-out infinite;
+}
+
+/* ============================================================
+   LOADING DOTS
+   ============================================================ */
+.spinner-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8px;
+}
+
+.spinner-dots span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #D32F2F;
+  animation: dotBounce 1.4s ease-in-out infinite;
+}
+
+.spinner-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.spinner-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.spinner-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+/* Spin Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pulse Animation for Logo */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+}
+
+/* Pulse Text Animation */
+@keyframes pulseText {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Dot Bounce Animation */
+@keyframes dotBounce {
+  0%, 80%, 100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ============================================================
+   ALTERNATIVE SPINNER VARIATIONS
+   ============================================================ */
+
+/* Variation 1: Gradient Ring */
+.spinner-gradient .spinner-ring-animated {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  background: conic-gradient(from 0deg, #D32F2F, #FFB800, #D32F2F, #FFB800, #D32F2F);
+  mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
+  border: none;
+}
+
+/* Variation 2: Bouncing Logo */
+.spinner-bounce .spinner-logo {
+  animation: bounceLogo 1s ease-in-out infinite;
+}
+
+@keyframes bounceLogo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Variation 3: Double Ring */
+.spinner-double .spinner-ring-animated {
+  border-width: 3px;
+}
+
+.spinner-double .spinner-ring-track {
+  border-width: 3px;
+  border-color: rgba(211, 47, 47, 0.1);
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+/* ===== MOBILE (below 480px) ===== */
+@media (max-width: 479px) {
+  .spinner-ring {
+    width: 72px;
+    height: 72px;
+  }
+
+  .spinner-ring-animated,
+  .spinner-ring-track {
+    border-width: 3px;
+  }
+
+  .spinner-logo img {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+
+  .spinner-text {
+    font-size: 14px;
+  }
+
+  .spinner-dots span {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* ===== TABLET (480px - 1023px) ===== */
+@media (min-width: 480px) and (max-width: 1023px) {
+  .spinner-ring {
+    width: 85px;
+    height: 85px;
+  }
+
+  .spinner-logo img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ============================================================
+   DARK MODE SUPPORT (Optional)
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  .spinner-container {
+    background: #0A1628;
+  }
+
+  .spinner-text {
+    color: #E8EDF5;
+    opacity: 0.8;
+  }
+
+  .spinner-ring-track {
+    border-color: rgba(255, 184, 0, 0.1);
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION PREFERENCE
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .spinner-ring-animated {
+    animation-duration: 2s;
+  }
+
+  .spinner-logo {
+    animation: none;
+  }
+
+  .spinner-text {
+    animation: none;
+  }
+
+  .spinner-dots span {
+    animation: none;
+  }
+}

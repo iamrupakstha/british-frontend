@@ -1,0 +1,464 @@
+/* src/components/pages/study-abroad/css/studyAbroad.css */
+
+:root {
+  --color-primary: #1A237E;
+  --color-accent: #D32F2F;
+  --color-gold: #FFB800;
+  --color-white: #FFFFFF;
+  --color-gray: #F8F9FA;
+  --color-border: #E8ECF0;
+  --color-text: #1A237E;
+  --color-text-light: #6B7280;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.10);
+  --radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================================
+   SECTION HEADER
+   ============================================================ */
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(211, 47, 47, 0.08);
+  padding: 4px 16px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* ===== HERO BUTTON ===== */
+.study-hero-content .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  background: var(--color-gold);
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(255, 184, 0, 0.25);
+}
+
+.study-hero-content .btn-primary:hover {
+  background: #E6A500;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(255, 184, 0, 0.35);
+}
+
+/* ===== HERO STATS ===== */
+.study-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.study-hero-stats div {
+  text-align: center;
+}
+
+.study-hero-stats .stat-number {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-gold);
+  line-height: 1.2;
+}
+
+.study-hero-stats .stat-label {
+  font-size: 13px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* ============================================================
+   DESTINATIONS GRID
+   ============================================================ */
+.destinations-grid-section {
+  padding: 80px 0;
+  background: var(--color-white);
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.destination-card {
+  background: var(--color-gray);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.dest-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.dest-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.destination-card:hover .dest-image img {
+  transform: scale(1.05);
+}
+
+.dest-flag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 28px;
+}
+
+.dest-info {
+  padding: 20px;
+}
+
+.dest-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.dest-info p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.dest-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.dest-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+
+.dest-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: var(--transition);
+}
+
+.destination-card:hover .dest-link {
+  gap: 12px;
+  color: var(--color-gold);
+}
+
+/* ============================================================
+   BENEFITS SECTION
+   ============================================================ */
+.benefits-section {
+  padding: 80px 0;
+  background: var(--color-gray);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 32px 20px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-bottom: 3px solid var(--color-gold);
+}
+
+.benefit-icon {
+  font-size: 36px;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.benefit-card p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================================
+   SERVICES SECTION
+   ============================================================ */
+.services-section {
+  padding: 80px 0;
+  background: var(--color-white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--color-gray);
+  padding: 32px 24px;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-top: 3px solid var(--color-gold);
+}
+
+.service-icon {
+  font-size: 32px;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================================
+   PROCESS SECTION
+   ============================================================ */
+.process-section {
+  padding: 80px 0;
+  background: var(--color-gray);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.process-step {
+  text-align: center;
+  padding: 24px 16px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.process-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.process-step .step-number {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--color-accent);
+  opacity: 0.15;
+  margin-bottom: 4px;
+}
+
+.process-step h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 4px 0;
+}
+
+.process-step p {
+  font-size: 12px;
+  color: var(--color-text-light);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .study-hero-stats {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .study-hero {
+    height: auto;
+    min-height: 320px;
+    padding: 50px 0;
+  }
+  .study-hero-content h1 {
+    font-size: 30px;
+  }
+  .study-hero-content p {
+    font-size: 15px;
+  }
+  .study-hero-stats {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .study-hero-stats .stat-number {
+    font-size: 24px;
+  }
+  .destinations-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  .study-hero-content .btn-primary {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .study-hero {
+    min-height: 280px;
+    padding: 40px 0;
+  }
+  .study-hero-content h1 {
+    font-size: 24px;
+  }
+  .study-hero-content p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .study-hero-stats {
+    gap: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .study-hero-stats .stat-number {
+    font-size: 20px;
+  }
+  .study-hero-stats .stat-label {
+    font-size: 11px;
+  }
+  .study-hero-content .btn-primary {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .dest-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

@@ -1,0 +1,521 @@
+/* src/components/pages/courses/css/BeauticianCourses.css */
+
+/* ============================================================
+   ROOT VARIABLES
+   ============================================================ */
+:root {
+  --color-primary: #1A237E;
+  --color-accent: #D32F2F;
+  --color-gold: #FFB800;
+  --color-white: #FFFFFF;
+  --color-gray: #F8F9FA;
+  --color-border: #E8ECF0;
+  --color-text: #1A237E;
+  --color-text-light: #6B7280;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.10);
+  --radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================================
+   SECTION HEADER
+   ============================================================ */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(211, 47, 47, 0.08);
+  padding: 4px 16px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.courses-hero {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.courses-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.courses-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(26, 35, 126, 0.85) 0%, rgba(26, 35, 126, 0.4) 100%);
+  z-index: 1;
+}
+
+.courses-hero-content {
+  position: relative;
+  z-index: 2;
+  color: var(--color-white);
+  width: 100%;
+  text-align: center;
+}
+
+.courses-hero-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-gold);
+  background: rgba(255, 184, 0, 0.15);
+  padding: 4px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.courses-hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+}
+
+.courses-hero-content p {
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   INTRODUCTION
+   ============================================================ */
+.intro-section {
+  padding: 60px 0;
+  background: var(--color-white);
+}
+
+.intro-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 16px 0;
+}
+
+.intro-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* ============================================================
+   OVERVIEW + IMAGE
+   ============================================================ */
+.overview-section {
+  padding: 60px 0;
+  background: var(--color-gray);
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.overview-text .section-tag {
+  margin-bottom: 12px;
+}
+
+.overview-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 16px 0;
+}
+
+.overview-text p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin: 0 0 12px 0;
+}
+
+.overview-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+}
+
+.highlight-item svg {
+  color: var(--color-accent);
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.highlight-item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 2px 0;
+}
+
+.highlight-item p {
+  font-size: 12px;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.overview-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  height: 350px;
+  object-fit: cover;
+  box-shadow: var(--shadow-hover);
+}
+
+/* ============================================================
+   SCHOLARSHIP HIGHLIGHT
+   ============================================================ */
+.scholarship-highlight {
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--color-primary), #0D1445);
+}
+
+.scholarship-banner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius);
+  border: 2px solid var(--color-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.scholarship-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 184, 0, 0.05);
+}
+
+.scholarship-icon {
+  font-size: 56px;
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.scholarship-content {
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.scholarship-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.scholarship-content p {
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0 0 4px 0;
+}
+
+.scholarship-content .scholarship-detail {
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.btn-scholarship {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  background: var(--color-gold);
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-scholarship:hover {
+  background: #E6A500;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 184, 0, 0.3);
+}
+
+/* ============================================================
+   COURSES OVERVIEW
+   ============================================================ */
+.courses-overview {
+  padding: 60px 0;
+  background: var(--color-white);
+}
+
+.courses-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.course-overview-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid var(--color-border);
+}
+
+.course-overview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.course-overview-header {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.short-course .course-overview-header {
+  background: var(--color-accent);
+}
+
+.long-course .course-overview-header {
+  background: var(--color-primary);
+}
+
+.course-overview-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.course-overview-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.course-overview-header p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.course-overview-content {
+  padding: 20px 24px;
+}
+
+.course-overview-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 16px;
+}
+
+.course-overview-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text-light);
+  padding: 4px 0;
+}
+
+.course-overview-content ul li svg {
+  color: var(--color-gold);
+  font-size: 12px;
+}
+
+/* ============================================================
+   WHY CHOOSE US
+   ============================================================ */
+.why-section {
+  padding: 60px 0;
+  background: var(--color-gray);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.why-item {
+  text-align: center;
+  padding: 24px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.why-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.why-icon {
+  font-size: 28px;
+  color: var(--color-gold);
+  margin-bottom: 8px;
+}
+
+.why-item p {
+  font-size: 15px;
+  color: var(--color-text);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .overview-image img {
+    height: 250px;
+  }
+  .courses-overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-hero {
+    height: 280px;
+  }
+  .courses-hero-content h1 {
+    font-size: 28px;
+  }
+  .courses-hero-content p {
+    font-size: 14px;
+  }
+  .course-overview-content ul {
+    grid-template-columns: 1fr;
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .scholarship-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .scholarship-icon {
+    font-size: 40px;
+  }
+  .scholarship-content h2 {
+    font-size: 26px;
+  }
+  .overview-highlights {
+    grid-template-columns: 1fr;
+  }
+  .overview-image img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-hero {
+    height: 220px;
+  }
+  .courses-hero-content h1 {
+    font-size: 22px;
+  }
+  .courses-hero-content p {
+    font-size: 13px;
+  }
+  .intro-content h2 {
+    font-size: 22px;
+  }
+  .scholarship-content h2 {
+    font-size: 22px;
+  }
+  .btn-scholarship {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  .scholarship-banner {
+    padding: 20px 16px;
+  }
+}
