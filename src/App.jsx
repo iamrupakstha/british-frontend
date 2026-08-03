@@ -1,21 +1,21 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './context/AuthContext.jsx';
 
 // Admin Components
-import AdminLayout from './components/Admin/AdminLayout';
+import AdminLayout from './components/Admin/AdminLayout.jsx';
 
-import AdminLogin from './components/Admin/AdminLogin';
+import AdminLogin from './components/Admin/AdminLogin.jsx';
 
-import AdminDashboard from './components/Admin/AdminDashboard';
+import AdminDashboard from './components/Admin/AdminDashboard.jsx';
 
-import ProtectedRoute from './components/Admin/ProtectedRoute';
-import CertificateManagement from './components/Admin/CertificateManagement';
-import ContactManagement from './components/Admin/ContactsManagement';
+import ProtectedRoute from './components/Admin/ProtectedRoute.jsx';
+import CertificateManagement from './components/Admin/CertificateManagement.jsx';
+import ContactManagement from './components/Admin/ContactsManagement.jsx';
 
 
-import VerifyCertificate from './components/Public/VerifyCertificate';
+import VerifyCertificate from './components/Public/VerifyCertificate.jsx';
 
 
 // Layout Components
@@ -45,7 +45,7 @@ import BeauticianCourses from './components/pages/courses/BeauticianCourses.jsx'
 import IELTSPTE from './components/pages/courses/IELTSPTE.jsx';
 
 //Enroll
-import EnrollForm from './components/Public/EnrollForm';
+import EnrollForm from './components/Public/EnrollForm.jsx';
 
 // Other Pages
 import Resources from './components/pages/Resources.jsx';
