@@ -4,15 +4,15 @@ import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './context/AuthContext.jsx';
 
 // Admin Components
-import AdminLayout from './components/Admin/AdminLayout.jsx';
+import AdminLayout from './components/admin/AdminLayout.jsx';
 
-import AdminLogin from './components/Admin/AdminLogin.jsx';
+import AdminLogin from './components/aminDashboard.jsx';
 
-import AdminDashboard from './components/Admin/AdminDashboard.jsx';
+import AdminDashboard from './components/admin/AdminDashboard.jsx';
 
-import ProtectedRoute from './components/Admin/ProtectedRoute.jsx';
-import CertificateManagement from './components/Admin/CertificateManagement.jsx';
-import ContactManagement from './components/Admin/ContactsManagement.jsx';
+import ProtectedRoute from './components/admin/ProtectedRoute.jsx';
+import CertificateManagement from './components/admin/CertificateManagement.jsx';
+import ContactManagement from './components/admin/ContactsManagement.jsx';
 
 
 import VerifyCertificate from './components/Public/VerifyCertificate.jsx';
