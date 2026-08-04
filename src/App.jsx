@@ -6,7 +6,7 @@ import { AuthProvider } from './context/AuthContext.jsx';
 // Admin Components
 import AdminLayout from './components/admin/AdminLayout.jsx';
 
-import AdminLogin from './components/aminDashboard.jsx';
+import AdminLogin from './components/admin/AdminLogin.jsx';
 
 import AdminDashboard from './components/admin/AdminDashboard.jsx';
 
