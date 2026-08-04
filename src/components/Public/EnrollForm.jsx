@@ -133,7 +133,7 @@ const EnrollForm = () => {
 
   return (
     <div className="enroll-container">
-      <div className="enroll-wrapper">
+      <div className="enroll-wrappers">
         <div className="enroll-header">
           <h1>Enroll Now</h1>
           <p>Start your educational journey with British Institution of Education Pvt. Ltd.</p>

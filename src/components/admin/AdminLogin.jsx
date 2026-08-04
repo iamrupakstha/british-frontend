@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
-import './css/AdminLogin.css';
+import './css/Login.css';
 import PageTitle from '../common/PageTitle.jsx';
 
 
@@ -61,8 +61,9 @@ const AdminLogin = () => {
   return (
     <>
     <PageTitle title="Login Page" description="Login Page" />
+
     <div className="admin-login-container">
-      <div className="admin-login-card">
+      <div className="admin-login-cards">
         <div className="admin-login-header">
           <div className="login-logo">📜</div>
           <h1>Login</h1>

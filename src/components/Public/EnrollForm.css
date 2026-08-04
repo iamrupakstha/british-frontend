@@ -1,10 +1,4 @@
-/* ============================================================
-   ENROLL FORM - Complete CSS
-   ============================================================ */
 
-/* ============================================================
-   ROOT VARIABLES
-   ============================================================ */
 :root {
   --color-primary: #1A237E;
   --color-primary-dark: #0D1445;
@@ -35,13 +29,13 @@
   padding: 40px 20px;
 }
 
-.enroll-wrapper {
+.enroll-wrappers {
   background: var(--color-white);
   border-radius: 16px;
   padding: 48px 40px;
   max-width: 750px;
   width: 100%;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
   animation: slideUp 0.5s ease;
 }
 
@@ -235,7 +229,7 @@
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
-  .enroll-wrapper {
+  .enroll-wrappers {
     padding: 32px 20px;
   }
   
@@ -254,7 +248,7 @@
 }
 
 @media (max-width: 480px) {
-  .enroll-wrapper {
+  .enroll-wrappers {
     padding: 24px 16px;
   }
   
@@ -275,64 +269,14 @@
   }
 }
 
-/* ============================================================
-   DARK MODE SUPPORT
-   ============================================================ */
-@media (prefers-color-scheme: dark) {
-  .enroll-wrapper {
-    background: rgba(30, 30, 50, 0.98);
-  }
-  
-  .enroll-header h1 {
-    color: var(--color-white);
-  }
-  
-  .enroll-header p {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .form-group label {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.1);
-    color: var(--color-white);
-  }
-  
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
-    background: rgba(255, 255, 255, 0.08);
-  }
-  
-  .form-group input::placeholder,
-  .form-group textarea::placeholder {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  
-  .enroll-footer {
-    border-top-color: rgba(255, 255, 255, 0.08);
-  }
-  
-  .enroll-footer p {
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
 
-/* ============================================================
-   PRINT STYLES
-   ============================================================ */
 @media print {
   .enroll-container {
     background: var(--color-white);
     padding: 20px;
   }
   
-  .enroll-wrapper {
+  .enroll-wrappers {
     box-shadow: none;
     padding: 20px;
   }
