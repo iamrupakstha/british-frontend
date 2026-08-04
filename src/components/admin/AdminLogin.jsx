@@ -3,6 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
 import './css/AdminLogin.css';
+import PageTitle from '../common/PageTitle.jsx';
+
 
 const AdminLogin = () => {
   const [email, setEmail] = useState('');
@@ -57,6 +59,8 @@ const AdminLogin = () => {
   };
 
   return (
+    <>
+    <PageTitle title="Login Page" description="Login Page" />
     <div className="admin-login-container">
       <div className="admin-login-card">
         <div className="admin-login-header">
@@ -139,6 +143,7 @@ const AdminLogin = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCheckCircle, FaArrowRight, FaGraduationCap, FaUsers, FaAward, FaGlobe } from 'react-icons/fa';
 
-import PageTitle from '../common/pageTitle.jsx';
+import PageTitle from '../common/PageTitle.jsx';
 
 // Import images (you'll need to add these images)
 import AboutHeroImage from '../../assets/images/team/about-hero.jpg';

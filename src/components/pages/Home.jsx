@@ -57,7 +57,7 @@ import CanadoreLogo from '../../assets/images/colleges/canadore.avif';
 import VictoriaLogo from '../../assets/images/colleges/victoria.webp';
 
 import './css/Home.css';
-import PageTitle from '../common/pageTitle';
+import PageTitle from '../common/PageTitle';
 
 // ===== SLIDER DATA =====
 const slides = [
