@@ -27,7 +27,7 @@ import BeauticianCourse from '../../../assets/images/courses/beautician-course.j
 import ieltspte from '../../../assets/images/courses/ieltspte.webp';
 import courseOverlay from '../../../assets/images/courses/course-overlay.jpg';
 
-import './css/Course.css';
+import './css/Courses.css';
 
 const Courses = () => {
   // ===== COURSES DATA =====
