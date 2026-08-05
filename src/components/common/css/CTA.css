@@ -18,8 +18,8 @@
    ============================================================ */
 .cta-sections {
   padding: 60px 0;
-  background: linear-gradient(135deg, #1A237E, #0D1445);
-  color: #FFFFFF;
+  background: #ebf9f9;
+  color: #1A237E;
   position: relative;
   overflow: hidden;
 }
@@ -120,8 +120,8 @@
   align-items: center;
   gap: 10px;
   padding: 14px 32px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #FFFFFF;
+  border: 2px solid #1A237E;
+  color: #1A237E;
   font-size: 16px;
   font-weight: 600;
   border-radius: 8px;
@@ -131,10 +131,10 @@
 }
 
 .cta-buttons .btn-outline:hover {
-  background: #FFFFFF;
-  color: #1A237E;
+  background: #1A237E;
+  color: #FFFFFF;
   transform: translateY(-2px);
-  border-color: #FFFFFF;
+  border-color: none;
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
 }
 

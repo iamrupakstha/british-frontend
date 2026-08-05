@@ -10,7 +10,8 @@ import {
 import PageTitle from '../common/PageTitle.jsx';
 
 // Hero Background Image
-import HeroBg from '../../assets/images/courses/english-class3.webp'
+import HeroBg from '../../assets/images/resources/british.jpeg';
+
 
 // Gallery Images
 import Gallery1 from '../../assets/images/courses/picnic.webp';
@@ -22,8 +23,15 @@ import Gallery6 from '../../assets/images/courses/std.webp';
 import Gallery7 from '../../assets/images/courses/tour1.jpg';
 import Gallery8 from '../../assets/images/courses/tour2.jpg';
 import Gallery9 from '../../assets/images/courses/tour3.jpg';
-import Gallery10 from '../../assets/images/courses/quiz.webp';
+import Gallery10 from '../../assets/images/resources/tour.jpeg';
+import Gallery11 from '../../assets/images/resources/tour1.jpeg';
+import Gallery12 from '../../assets/images/courses/tour3.jpg';
+import Gallery13 from '../../assets/images/courses/quiz.webp';
 
+import Gallery14 from '../../assets/images/resources/birthday1.jpeg';
+import Gallery15 from '../../assets/images/resources/birthday3.jpeg';
+import Gallery16 from '../../assets/images/resources/picnic.jpeg';
+import Gallery17 from '../../assets/images/resources/picnic2.jpeg';
 
 import './css/Gallery.css';
 
@@ -45,8 +53,14 @@ const Gallery = () => {
     { id: 7, image: Gallery7, title: 'Educational Tour' },
     { id: 8, image: Gallery8, title: 'Educational Tour' },
     { id: 9, image: Gallery9, title: 'Educational Tour' },
-    { id: 10, image: Gallery10, title: 'Quiz Competition' },
-
+    { id: 10, image: Gallery10, title: 'Educational Tour' },
+    { id: 11, image: Gallery11, title: 'Educational Tour' },
+    { id: 12, image: Gallery12, title: 'Educational Tour' },
+    { id: 13, image: Gallery13, title: 'Quiz Competition' },
+    { id: 14, image: Gallery14, title: 'Birthday Celebrations' },
+    { id: 15, image: Gallery15, title: 'Birthday Celebrations' },
+    { id: 16, image: Gallery16, title: 'Picnic' },
+    { id: 17, image: Gallery17, title: 'Picnic' },
   ];
 
   // ===== LIGHTBOX FUNCTIONS =====

@@ -24,7 +24,6 @@ const Footer = () => {
 
   const quickLinks = [
     { to: '/about', label: 'About Us' },
-    { to: '/services', label: 'Our Services' },
     { to: '/study-abroad', label: 'Study Abroad' },
     { to: '/courses', label: 'Courses' },
     { to: '/contact', label: 'Contact' },
@@ -45,10 +44,7 @@ const Footer = () => {
     { day: 'Saturday', hours: 'Closed' },
   ];
 
-  const legalLinks = [
-    { to: '/privacy-policy', label: 'Privacy Policy' },
-    { to: '/terms-conditions', label: 'Terms & Conditions' },
-  ];
+  
 
   return (
     <footer className="footer">
@@ -192,18 +188,7 @@ const Footer = () => {
               &copy; {currentYear} {instituteInfo.name}. All rights reserved.
             </p>
             
-            <div className="footer-bottom-links">
-              {legalLinks.map((link, index) => (
-                <React.Fragment key={link.to}>
-                  <Link to={link.to} className="footer-legal-link">
-                    {link.label}
-                  </Link>
-                  {index < legalLinks.length - 1 && (
-                    <span className="footer-divider">|</span>
-                  )}
-                </React.Fragment>
-              ))}
-            </div>
+            
 
             <div className="footer-powered">
               <span className="powered-text">

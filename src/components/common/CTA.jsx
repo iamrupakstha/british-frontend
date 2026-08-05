@@ -17,8 +17,8 @@ const CTA = () => {
           </div>
           <div className="cta-features">
             <span><FaCheckCircle /> CTEVT affiliated</span>
-            <span><FaCheckCircle /> 15+ years experience</span>
-            <span><FaCheckCircle /> 10000+ students trained</span>
+            <span><FaCheckCircle /> 18+ years experience</span>
+            <span><FaCheckCircle /> 20000+ students trained</span>
           </div>
         </div>
       </section>

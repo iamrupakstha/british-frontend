@@ -121,7 +121,7 @@ const Navbar = () => {
             </div>
 
             <div className="top-bar-right">
-              <span className="top-bar-affiliated-label">AFFILIATED</span>
+              <span className="top-bar-affiliated-label">CERTIFICATION</span>
               <div className="top-bar-logos">
                 {affiliatedLogos.map((logo) => (
                   <a

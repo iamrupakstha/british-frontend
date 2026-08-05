@@ -1,15 +1,9 @@
 // src/assets/index.js
 
 // Logo
-import logo from './logo/logo.jpg';
-import logoWhite from './logo/white-logo.jpeg';
+import logo from './logo/white-logo.jpeg';
 
-// If you don't have a white logo yet, create a white version or use the same logo
-// For now, we'll use the same logo for both
-const logoWhiteVersion = logo; // Replace with actual white logo when available
 
-// Certificates
-import certificateSample from './certificates/certificate-sample.jpeg';
 
 // Courses
 import computerCourse from './courses/computer-course.jpg';
@@ -31,8 +25,6 @@ import IELTS from './icons/ielts.jpeg'
 
 export const images = {
   logo,
-  logoWhite: logoWhiteVersion, // Use white version if available
-  certificateSample,
   courses: {
     computer: computerCourse,
     caregiver: caregiverCourse,

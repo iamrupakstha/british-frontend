@@ -25,7 +25,9 @@ import ComputerCoursesImage from '../../../assets/images/courses/computer-course
 import CareGiverImage from '../../../assets/images/courses/care-giver.jpeg';
 import BeauticianCourse from '../../../assets/images/courses/beautician-course.jpg';
 import ieltspte from '../../../assets/images/courses/ieltspte.webp';
-import courseOverlay from '../../../assets/images/courses/course-overlay.jpg';
+
+import courseOverlay from '../../../assets/images/resources/british.jpeg';
+
 
 import './css/Courses.css';
 

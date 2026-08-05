@@ -222,6 +222,7 @@
 }
 
 .overview-text p {
+  text-align: justify;
   font-size: 15px;
   line-height: 1.8;
   color: var(--color-text-light);
@@ -413,6 +414,7 @@
 }
 
 .process-item p {
+  text-align: justify;
   font-size: 14px;
   color: var(--color-text-light);
   line-height: 1.6;

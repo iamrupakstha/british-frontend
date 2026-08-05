@@ -187,7 +187,7 @@ const BeauticianCourses = () => {
               <h2>🎓 300 Free Training!</h2>
               <p>Under the Education Enhancement Campaign, 300 individuals will receive free training this year.</p>
               <p className="scholarship-detail">Selected candidates will be provided with comprehensive beautician training at absolutely no cost.</p>
-              <Link to="/contact" className="btn-scholarship">
+              <Link to="/enroll" className="btn-scholarship">
                 Apply for Scholarship <FaArrowRight />
               </Link>
             </div>

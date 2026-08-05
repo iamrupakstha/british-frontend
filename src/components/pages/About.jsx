@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import { FaCheckCircle, FaArrowRight, FaGraduationCap, FaUsers, FaAward, FaGlobe } from 'react-icons/fa';
 
 import PageTitle from '../common/PageTitle.jsx';
-
 // Import images (you'll need to add these images)
-import AboutHeroImage from '../../assets/images/team/about-hero.jpg';
+import AboutHeroImage from '../../assets/images/resources/british.jpeg';
 import FounderImage from '../../assets/images/team/watshal-bhattarai.jpg';
 import AboutProcessImage from '../../assets/images/team/process.jpg';
 import TimelineImage from '../../assets/images/team/timeline.jpg';
@@ -14,21 +13,26 @@ import TimelineImage from '../../assets/images/team/timeline.jpg';
 // Team Members Images
 import CounsellorImage from '../../assets/images/team/Anjana.jpg';
 import ComputerInstructorImage from '../../assets/images/team/Anjana.jpg';
-import EnglishTeacherImage from '../../assets/images/team/Anjana.jpg';
+import DikshyaGhimireImage from '../../assets/images/team/dikshya_ghimire.jpeg';
 import IeltsTeacherImage from '../../assets/images/team/asmita.jpg';
-
+import BimalGuragainImage from '../../assets/images/team/Bimal_Guragain.jpeg';
+import RajShresthaImage from '../../assets/images/team/Raj_Shrestha.jpeg';
+import VinishaRaiImage from '../../assets/images/team/Vinisha_Rai.jpeg';
+import LilaPandayImage from '../../assets/images/team/Lila_Panday.jpeg';
+import RamChamlagainImage from '../../assets/images/team/Ram_Chamlagai.jpeg';
+import PratikImage from '../../assets/images/team/pratik.png';
 import './css/About.css';
 
 const About = () => {
   // ===== TIMELINE DATA =====
   const timeline = [
     { year: '2008', title: 'Foundation', description: 'British Institution was established with a vision to provide quality education and skill development in Nepal.' },
-    { year: '2010', title: 'First Batch Graduates', description: 'Celebrated the graduation of our first cohort of computer and language students.' },
-    { year: '2012', title: 'CTEVT Affiliation', description: 'Received official affiliation from CTEVT for technical and vocational programs.' },
+    { year: '2010', title: 'Computer Courses', description: 'Introduced comprehensive computer courses for students.' },
     { year: '2015', title: 'Study Abroad Services', description: 'Launched comprehensive study abroad consultancy services for students.' },
     { year: '2018', title: 'Partnership with British Council', description: 'Became an official partner with British Council for English language testing.' },
-    { year: '2020', title: 'Online Learning Platform', description: 'Introduced online learning platform for remote education and training.' },
-    { year: '2024', title: '10000+ Students Trained', description: 'Reached the milestone of training over 10,000 students across all programs.' },
+    { year: '2024', title: 'CTEVT Affiliation', description: 'Received official affiliation from CTEVT for technical and vocational programs.' },
+    { year: '2025', title: 'Caregiver Training', description: 'Launched comprehensive caregiver training for students.' },
+    { year: '2026', title: '10000+ Students Trained', description: 'Reached the milestone of training over 20,000+ students across all programs.' },
   ];
 
   // ===== TEAM MEMBERS =====
@@ -43,26 +47,57 @@ const About = () => {
     {
       id: 2,
       name: 'Miss Anjana Bhattarai',
-      position: 'Senior Counsellor',
+      position: 'Treasurer',
       image: CounsellorImage,
     },
     {
       id: 3,
-      name: 'Miss Asmita ',
-      position: 'Senior Counsellor',
+      name: 'Miss Asmita Bastola',
+      position: 'Counsellor',
       image: IeltsTeacherImage,
+    },
+    {
+      id: 3,
+      name: 'Mrs. Lila Panday',
+      position: 'Counsellor',
+      image: LilaPandayImage,
     },
     {
       id: 4,
       name: 'Miss. Dikshya Ghimire',
       position: 'Counsellor',
-      image: EnglishTeacherImage,
+      image: DikshyaGhimireImage,
     },
     {
       id: 5,
+      name: 'Mr. Bimal Guragain',
+      position: 'English Teacher',
+      image: BimalGuragainImage,
+    },
+    {
+      id: 6,
+      name: 'Mr. Ram Chamlagain',
+      position: 'English Teacher',
+      image: RamChamlagainImage,
+    },
+    {
+      id: 7,
+      name: 'Mr. Vinisha Rai',
+      position: 'English Teacher',
+      image: VinishaRaiImage,
+    },
+    
+    {
+      id: 8,
+      name: 'Mr. Raj Shrestha',
+      position: 'Computer Teacher',
+      image: RajShresthaImage,
+    },
+    {
+      id: 9,
       name: 'Mr. Pratik Bhattarai',
-      position: 'Computer Instructor',
-      image: IeltsTeacherImage,
+      position: 'Computer Teacher',
+      image: PratikImage,
     },
   ];
 
@@ -118,22 +153,18 @@ const About = () => {
               <span className="section-tag">Who We Are</span>
               <h2 className="section-title">Welcome to British Institution</h2>
               <p>
-                British Institution of Education Pvt. Ltd. is a trusted and experienced educational center, 
-                proudly serving students since 2008. With a strong commitment to quality education and skill 
-                development, we have been helping individuals achieve their academic and career goals for over a decade.
+                British Institution of Education Pvt. Ltd. is a trusted and experienced educational center, proudly serving students since 2008. With a strong commitment to quality education and skill development, we have been helping individuals achieve their academic and career goals for over a decade.
               </p>
               <p>
-                Our programs are designed to meet the needs of students from different backgrounds and help them 
-                build a successful future. With qualified instructors, a supportive learning environment, and a 
-                focus on practical knowledge, we aim to empower our students with the skills and confidence they need.
+                Our programs are designed to meet the needs of students from different backgrounds and help them build a successful future. With qualified instructors, a supportive learning environment, and a focus on practical knowledge, we aim to empower our students with the skills and confidence they need.
               </p>
               <div className="about-intro-stats">
                 <div>
-                  <span className="stats-number">15+</span>
+                  <span className="stats-number">18+</span>
                   <span className="stats-label">Years of Excellence</span>
                 </div>
                 <div>
-                  <span className="stats-number">10K+</span>
+                  <span className="stats-number">20K+</span>
                   <span className="stats-label">Students Trained</span>
                 </div>
                 <div>
@@ -159,11 +190,11 @@ const About = () => {
             </div>
             <div className="about-founder-text">
               <span className="section-tag">Message From</span>
-              <h2 className="section-title">Mr. Watschal Bhattarai</h2>
+              <h2 className="section-title">Mr. Watshal Bhattarai</h2>
               <h3>Founder & CEO, British Institution</h3>
               <p>
                 "At British Institution, we believe that education is the most powerful tool to transform lives. 
-                Since 2008, we have been dedicated to providing quality education and training that empowers 
+                Since 2008, we have been dedicating to providing quality education and training that empowers 
                 individuals to achieve their dreams.
               </p>
               <p>
@@ -172,7 +203,7 @@ const About = () => {
                 mastering a new skill, or advancing your career, we are here to guide you every step of the way."
               </p>
               <div className="founder-signature">
-                <span>Watschal Bhattarai</span>
+                <span>Watshal Bhattarai</span>
                 <p>Founder & CEO, British Institution</p>
               </div>
             </div>

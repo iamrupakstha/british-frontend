@@ -9,20 +9,29 @@ import {
 import PageTitle from '../common/PageTitle.jsx';
 
 // Hero Background Image
-import HeroBg from '../../assets/images/resources/resources-overlay.webp';
+import HeroBg from '../../assets/images/resources/british.jpeg';
+
 
 // Banner Images
 import Banner1 from '../../assets/images/resources/after-see.jpg';
 import Banner2 from '../../assets/images/resources/beauty-parlour.jpg';
 import Banner3 from '../../assets/images/resources/study-korea.jpg';
-
+import StudentSuccess1 from '../../assets/images/students/visa-success5.jpg';
+import StudentSuccess2 from '../../assets/images/students/visa-success6.jpg';
+import StudentSuccess3 from '../../assets/images/students/visa-success7.jpg';
+import StudentSuccess4 from '../../assets/images/students/visa-success8.jpg';
+import StudentSuccess5 from '../../assets/images/students/visa-success9.jpg';
+import StudentSuccess6 from '../../assets/images/students/visa-success10.jpg';
+import StudentSuccess7 from '../../assets/images/students/visa-success11.jpg';
 // Brochure Images
-import Brochure1 from '../../assets/images/resources/study-malta.jpg';
-import Brochure2 from '../../assets/images/resources/study-usa.jpg';
-import Brochure3 from '../../assets/images/resources/study-usa.jpg';
-import Brochure4 from '../../assets/images/resources/study-usa.jpg';
-import Brochure5 from '../../assets/images/resources/study-usa.jpg';
-import Brochure6 from '../../assets/images/resources/study-usa.jpg';
+
+// brochers
+import Brochure1 from '../../assets/images/resources/brocher_page-0001.jpg';
+import Brochure2 from '../../assets/images/resources/brocher_page-0002.jpg';
+import Brochure3 from '../../assets/images/resources/brocher_page-0003.jpg';
+import Brochure4 from '../../assets/images/resources/brocher_page-0004.jpg';
+import Brochure5 from '../../assets/images/resources/brocher_page-0005.jpg';
+import Brochure6 from '../../assets/images/resources/brocher_page-0005.jpg';
 
 import './css/Resources.css';
 
@@ -37,7 +46,13 @@ const Resources = () => {
   const banners = [
     { id: 1, image: Banner1 },
     { id: 2, image: Banner2 },
-    { id: 3, image: Banner3 },
+    { id: 3, image: StudentSuccess1 },
+    { id: 4, image: StudentSuccess2 },
+    { id: 5, image: StudentSuccess3 },
+    { id: 6, image: StudentSuccess4 },
+    { id: 7, image: StudentSuccess5 },
+    { id: 8, image: StudentSuccess6 },
+    { id: 9, image: StudentSuccess7 },
   ];
 
   // ===== BROCHURE DATA =====
@@ -114,32 +129,6 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* ===== BANNERS SECTION ===== */}
-      <section className="banners-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-tag">Banners</span>
-            <h2>Banner Gallery</h2>
-          </div>
-          <div className="banners-grid">
-            {banners.map((banner, index) => (
-              <div 
-                className="banner-card" 
-                key={banner.id}
-                onClick={() => openLightbox(banners, index)}
-              >
-                <div className="banner-image">
-                  <img src={banner.image} alt="Banner" />
-                  <div className="banner-overlay">
-                    <FaExpand className="expand-icon" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ===== BROCHURES SECTION ===== */}
       <section className="brochures-section">
         <div className="container">
@@ -165,6 +154,34 @@ const Resources = () => {
           </div>
         </div>
       </section>
+
+      {/* ===== BANNERS SECTION ===== */}
+      <section className="banners-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-tag">Banners & Student Success</span>
+            <h2>Banner Gallery</h2>
+          </div>
+          <div className="banners-grid">
+            {banners.map((banner, index) => (
+              <div 
+                className="banner-card" 
+                key={banner.id}
+                onClick={() => openLightbox(banners, index)}
+              >
+                <div className="banner-image">
+                  <img src={banner.image} alt="Banner" />
+                  <div className="banner-overlay">
+                    <FaExpand className="expand-icon" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
 
       {/* ===== LIGHTBOX ===== */}
       {lightboxOpen && (

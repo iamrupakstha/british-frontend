@@ -18,7 +18,7 @@ import {
 import PageTitle from '../common/PageTitle.jsx';
 
 // Hero Background Image
-import HeroBg from '../../assets/images/courses/english-class4.webp';
+import HeroBg from '../../assets/images/resources/british.jpeg';
 
 import './css/Contact.css';
 

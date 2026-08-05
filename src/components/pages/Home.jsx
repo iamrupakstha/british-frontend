@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa';
 
 // Hero Images
-import britishImage from '../../assets/images/resources/british.webp';
+import britishImage from '../../assets/images/resources/british.jpeg';
 
 import StudyAbroadImage from '../../assets/images/courses/study-abroad.webp';
 import EnglishLanguageImage from '../../assets/images/courses/english-class3.webp';
@@ -32,10 +32,12 @@ import Malta from '../../assets/images/study-abroad/malta.jpg';
 import Europe from '../../assets/images/study-abroad/europe.jpg';
 
 // Visa Success
-import visaSuccess1 from '../../assets/images/students/vis-success1.jpg';
-import visaSuccess2 from '../../assets/images/students/vis-success3.jpg';
-import visaSuccess3 from '../../assets/images/students/vis-success4.jpg';
-import visaSuccess4 from '../../assets/images/students/vis-success5.jpg';
+import visaSuccess1 from '../../assets/images/students/visa-success1.jpg';
+import visaSuccess2 from '../../assets/images/students/visa-success2.jpg';
+import visaSuccess3 from '../../assets/images/students/visa-success3.jpg';
+import visaSuccess4 from '../../assets/images/students/visa-success4.jpg';
+import visaSuccess5 from '../../assets/images/students/visa-success5.jpg';
+
 
 // Review Student Images
 import reviewStd1 from '../../assets/images/students/review1.jpg';
@@ -105,10 +107,10 @@ const slides = [
 
 // ===== STATS DATA =====
 const stats = [
-  { value: 10000, suffix: '+', label: 'Students placed' },
+  { value: 20000, suffix: '+', label: 'Students placed' },
   { value: 20, suffix: '+', label: 'Courses offered' },
   { value: 10, suffix: '+', label: 'Expert trainers' },
-  { value: 7, suffix: '+', label: 'Study destinations' },
+  { value: 23, suffix: '+', label: 'Study destinations' },
 ];
 
 // ===== COURSES DATA =====
@@ -116,37 +118,37 @@ const services = [
   {
     title: 'Abroad Study',
     description: 'End-to-end guidance for the UK, USA, Australia, Canada, Korea, Malta and Europe.',
-    link: '/abroad-study',
+    link: '/study-abroad',
     image: StudyAbroadImage,
   },
   {
     title: 'Computer Courses',
     description: 'Basic to advanced computer courses, including CTEVT-affiliated programs.',
-    link: '/computer-courses',
+    link: '/courses/computer-courses',
     image: ComputerCoursesImage,
   },
   {
     title: 'Test Preparation',
     description: 'IELTS, PTE and UK Life Skills A1 preparation with focused, small-batch coaching.',
-    link: '/test-prep',
+    link: '/courses/ielts-pte',
     image: ieltspte,
   },
   {
     title: 'English Language Class',
     description: 'British & American Based English language classes.',
-    link: '/english-courses',
+    link: '/courses/english-courses',
     image: EnglishLanguageImage,
   },
   {
     title: 'Care Giver Training',
     description: 'CTEVT-affiliated child care, aged care and home care courses.',
-    link: '/care-giver',
+    link: '/courses/care-giver',
     image: CareGiverImage,
   },
   {
     title: 'Beautician Courses',
     description: 'Professional makeup artist training.',
-    link: '/beautician-course',
+    link: '/courses/beautician-courses',
     image: BeauticianCoure,
   },
   
@@ -162,13 +164,13 @@ const whyChooseUs = [
 
 // ===== DESTINATIONS =====
 const destinations = [
-  { name: 'United Kingdom', flag: '🇬🇧', path: '/study-uk', image: UK },
-  { name: 'United States', flag: '🇺🇸', path: '/study-usa', image: USA },
-  { name: 'Australia', flag: '🇦🇺', path: '/study-australia', image: Australia },
-  { name: 'Canada', flag: '🇨🇦', path: '/study-canada', image: Canada },
-  { name: 'South Korea', flag: '🇰🇷', path: '/study-korea', image: Korea },
-  { name: 'Malta', flag: '🇲🇹', path: '/study-malta', image: Malta },
-  { name: 'Europe', flag: '🇪🇺', path: '/study-europe', image: Europe },
+  { name: 'United Kingdom', flag: '🇬🇧', path: '/study-abroad/uk', image: UK },
+  { name: 'United States', flag: '🇺🇸', path: '/study-abroad/usa', image: USA },
+  { name: 'Australia', flag: '🇦🇺', path: '/study-abroad/australia', image: Australia },
+  { name: 'Canada', flag: '🇨🇦', path: '/study-abroad/canada', image: Canada },
+  { name: 'South Korea', flag: '🇰🇷', path: '/study-abroad/korea', image: Korea },
+  { name: 'Malta', flag: '🇲🇹', path: '/study-abroad/malta', image: Malta },
+  { name: 'Europe', flag: '🇪🇺', path: '/study-abroad/europe', image: Europe },
 ];
 
 // ===== PARTNERS =====
@@ -201,24 +203,24 @@ const successStories = [
 const reviews = [
   {
     id: 1,
-    name: 'Prakash Adhikari',
-    location: 'Kathmandu, Nepal',
+    name: 'Suman Bhattarai',
+    location: 'Birtamode, Jhapa, Nepal',
     image: reviewStd1,
-    text: 'The best educational consultancy in Nepal. They guided me through the entire process and I am now studying in the UK.',
+    text: 'Being part of the Institution was an exciting platform for me.British Institution is one of the best IT institutes in Nepal. Providing excellent resources. The conditions are excellent, and the company is very supportive of those who are motivated to succeed.I would suggest starting a career in IT right after your School Exam.',
     rating: 5,
   },
   {
     id: 2,
-    name: 'Sunita Thapa',
-    location: 'Biratnagar, Nepal',
+    name: 'Rohish Rai',
+    location: 'Jhapa,Birtamode',
     image: reviewStd1,
-    text: 'I got my Australia student visa within two weeks. Professional and supportive team. Highly recommended!',
+    text: 'Hello everyone!I am very poor in computer learning so that I joined the British language institute in btm.this institute was very useful for me its helps to build of my computer skills Dear friends! If you want to learn computer courses than you will be join this institution may be this institution will useful for you.❤️',
     rating: 5,
   },
   {
     id: 3,
     name: 'Krishna Bhandari',
-    location: 'Pokhara, Nepal',
+    location: 'Charpane, Jhapa, Nepal',
     image: reviewStd1,
     text: 'Their IELTS course is excellent. I improved from 5.5 to 7.0 in just two months. Thank you British Institution!',
     rating: 4,
@@ -300,7 +302,9 @@ const Home = () => {
 
   // Facebook Page URL
   const facebookPageUrl = 'https://www.facebook.com/britishbirtamode';
-  const facebookPageUrl1 = 'https://www.facebook.com/british.btm'
+  const facebookPageUrl1 = 'https://www.facebook.com/british.btm';
+  const facebookPageUrl2 = 'https://www.facebook.com/britishieltscenterbirtamod';
+  const facebookPageUrl3 = 'https://www.facebook.com/vocationaltc';
 
   return (
     <div className="home-page">
@@ -387,7 +391,7 @@ const Home = () => {
           </div>
           <div className="why-image">
             <img src={britishImage} alt="Students at British Institution" />
-            <div className="why-image-badge">15+ years of excellence</div>
+            <div className="why-image-badge">18+ years of excellence</div>
           </div>
         </div>
       </section>
@@ -446,14 +450,7 @@ const Home = () => {
     </div>
     
     <div className="notices-grid">
-      {/* ===== LEFT: Information Card ===== */}
-      <div className="notices-info-card">
-        <div className="notices-info-content">
-          <div className="notices-info-icon">📢</div>
-          <h3>Stay Updated</h3>
-          <p>Get the latest news, admission alerts, scholarship announcements, and success stories directly from our Facebook pages.</p>
-          </div>
-      </div>
+      
 
       {/* ===== MIDDLE: Facebook Feed 1 ===== */}
       <div className="facebook-embed">
@@ -463,6 +460,25 @@ const Home = () => {
         </div>
         <iframe
           src={`https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(facebookPageUrl)}&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId`}
+          width="100%"
+          height="500"
+          style={{ border: 'none', overflow: 'hidden' }}
+          scrolling="no"
+          frameBorder="0"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          title="Facebook Page Feed"
+        />
+      </div>
+
+      {/* ===== MIDDLE: Facebook Feed 1 ===== */}
+      <div className="facebook-embed">
+        <div className="facebook-embed-header">
+          <FaFacebook className="facebook-embed-icon" />
+          <span>British Caregiver Center</span>
+        </div>
+        <iframe
+          src={`https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(facebookPageUrl3)}&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId`}
           width="100%"
           height="500"
           style={{ border: 'none', overflow: 'hidden' }}
@@ -492,14 +508,34 @@ const Home = () => {
           title="Facebook Page Feed"
         />
       </div>
+      
+      {/* ===== RIGHT: Facebook Feed 2 ===== */}
+      <div className="facebook-embed">
+        <div className="facebook-embed-header">
+          <FaFacebook className="facebook-embed-icon" />
+          <span>British Ielts Center</span>
+        </div>
+        <iframe
+          src={`https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(facebookPageUrl2)}&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId`}
+          width="100%"
+          height="500"
+          style={{ border: 'none', overflow: 'hidden' }}
+          scrolling="no"
+          frameBorder="0"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          title="Facebook Page Feed"
+        />
+      </div>
+
     </div>
   </div>
-</section>
+      </section>
 
      
 
      {/* ===== SUCCESS STORIES ===== */}
-<section className="success-section">
+      <section className="success-section">
   <div className="container">
     <div className="section-header">
       <span className="section-tag">Success Stories</span>
@@ -517,73 +553,79 @@ const Home = () => {
       ))}
     </div>
   </div>
-</section>
+      </section>
 
       {/* ===== REVIEWS SECTION - Full Width & Attractive ===== */}
-      <section className="reviews-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-tag">Testimonials</span>
-            <h2 className="section-title">What Our Students Say</h2>
-            <p className="section-subtitle">Real feedback from students who trusted British Institution</p>
-          </div>
+      {/* ===== REVIEWS SECTION - Full Width & Attractive ===== */}
+<section className="reviews-section">
+  <div className="container">
+    <div className="section-header">
+      <span className="section-tag">Testimonials</span>
+      <h2 className="section-title">What Our Students Say</h2>
+      <p className="section-subtitle">Real feedback from students who trusted British Institution</p>
+    </div>
 
-          <div className="reviews-wrapper">
-            <button onClick={prevReview} className="review-arrow review-arrow-left">
-              <FaChevronLeft />
-            </button>
+    <div className="reviews-wrapper">
+      <button onClick={prevReview} className="review-arrow review-arrow-left">
+        <FaChevronLeft />
+      </button>
 
-            <div className="reviews-grid">
-              {reviews.map((review, index) => (
-                <div
-                  key={review.id}
-                  className={`review-card ${index === reviewIndex ? 'active' : ''}`}
-                >
-                  <div className="review-card-inner">
-                    <div className="review-header">
-                      <div className="review-user">
-                        <div className="review-avatar">
-                          <img src={review.image} alt={review.name} />
-                        </div>
-                        <div>
-                          <h4>{review.name}</h4>
-                          <p>{review.location}</p>
-                        </div>
-                      </div>
-                      <div className="review-rating">
-                        <Stars count={review.rating} />
-                      </div>
+      <div className="reviews-slider-container">
+        <div 
+          className="reviews-slider-track" 
+          style={{ 
+            transform: `translateX(-${reviewIndex * 100}%)`,
+            transition: 'transform 0.5s ease-in-out'
+          }}
+        >
+          {reviews.map((review) => (
+            <div key={review.id} className="review-slide">
+              <div className="review-card-inner">
+                <div className="review-header">
+                  <div className="review-user">
+                    <div className="review-avatar">
+                      <img src={review.image} alt={review.name} />
                     </div>
-                    <div className="review-body">
-                      <FaQuoteLeft className="review-quote-icon left" />
-                      <p className="review-text">{review.text}</p>
-                      <FaQuoteRight className="review-quote-icon right" />
-                    </div>
-                    <div className="review-footer">
-                      <span className="review-badge">Verified Student</span>
+                    <div>
+                      <h4>{review.name}</h4>
+                      <p>{review.location}</p>
                     </div>
                   </div>
+                  <div className="review-rating">
+                    <Stars count={review.rating} />
+                  </div>
                 </div>
-              ))}
+                <div className="review-body">
+                  <FaQuoteLeft className="review-quote-icon left" />
+                  <p className="review-text">{review.text}</p>
+                  <FaQuoteRight className="review-quote-icon right" />
+                </div>
+                <div className="review-footer">
+                  <span className="review-badge">Student</span>
+                </div>
+              </div>
             </div>
-
-            <button onClick={nextReview} className="review-arrow review-arrow-right">
-              <FaChevronRight />
-            </button>
-          </div>
-
-          <div className="review-dots">
-            {reviews.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setReviewIndex(index)}
-                className={`review-dot ${index === reviewIndex ? 'active' : ''}`}
-                aria-label={`Go to review ${index + 1}`}
-              />
-            ))}
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
+
+      <button onClick={nextReview} className="review-arrow review-arrow-right">
+        <FaChevronRight />
+      </button>
+    </div>
+
+    <div className="review-dots">
+      {reviews.map((_, index) => (
+        <button
+          key={index}
+          onClick={() => setReviewIndex(index)}
+          className={`review-dot ${index === reviewIndex ? 'active' : ''}`}
+          aria-label={`Go to review ${index + 1}`}
+        />
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* ===== TEST PARTNERS ===== */}
       <section className="partners-section">
