@@ -139,7 +139,7 @@ const Footer = () => {
                 <div className="footer-contact-item">
                   <FaMapMarkerAlt className="contact-icon" />
                   <div>
-                    <p>{instituteInfo.location}</p>
+                    <p>Birtamod, Bhadrapur Road (Opposite to Yamaha Showroom), Jhapa</p>
                   </div>
                 </div>
                 

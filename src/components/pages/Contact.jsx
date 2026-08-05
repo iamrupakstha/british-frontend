@@ -70,14 +70,14 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt />,
       title: 'Address',
-      details: ['Koshi Province, Jhapa, Birtamod, Nepal'],
+      details: ['Birtamod, Bhadrapur Road (Opposite to Yamaha Showroom), Jhapa'],
       link: 'https://maps.google.com'
     },
     {
       icon: <FaPhone />,
       title: 'Phone',
-      details: ['977-23-535918', '9824934350', '9820513922'],
-      link: 'tel:97723535918'
+      details: ['+977-23-535918', '9824934350', '9820513922'],
+      link: 'tel:+977-023535918'
     },
     {
       icon: <FaEnvelope />,
@@ -88,7 +88,7 @@ const Contact = () => {
     {
       icon: <FaClock />,
       title: 'Working Hours',
-      details: ['Mon - Fri: 8:00 AM - 6:00 PM', 'Sat: 9:00 AM - 4:00 PM'],
+      details: ['Mon - Fri: 6:00 AM - 6:00 PM'],
     },
   ];
 
