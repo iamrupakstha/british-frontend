@@ -64,7 +64,7 @@ const About = () => {
     },
     {
       id: 4,
-      name: 'Miss. Dikshya Ghimire',
+      name: 'Miss Dikshya Ghimire',
       position: 'Counsellor',
       image: DikshyaGhimireImage,
     },
@@ -82,7 +82,7 @@ const About = () => {
     },
     {
       id: 7,
-      name: 'Mr. Vinisha Rai',
+      name: 'Miss Vinisha Rai',
       position: 'English Teacher',
       image: VinishaRaiImage,
     },
