@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { certificateAPI } from '../../services/api';
 import toast from 'react-hot-toast';
+import PageTitle from '../common/PageTitle';
 import './VerifyCertificate.css';
 
 const VerifyCertificate = () => {
@@ -62,6 +63,11 @@ const VerifyCertificate = () => {
 
   return (
     <div className="verify-container">
+      <PageTitle
+              title="Verify Certificate"
+              description="British Institution - Verify the authenticity of your certificate"
+      />
+
       <div className="verify-wrapper">
         <div className="verify-header">
           <div className="verify-icon">📜</div>

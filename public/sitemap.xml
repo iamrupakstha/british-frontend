@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://britishinstitution.com.np/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://britishinstitution.com.np/about</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://britishinstitution.com.np/study-abroad</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://britishinstitution.com.np/courses</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://britishinstitution.com.np/contact</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://britishinstitution.com.np/enroll</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://britishinstitution.com.np/verify-certificate</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>

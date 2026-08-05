@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { contactAPI } from '../../services/api';
 import toast from 'react-hot-toast';
 import './EnrollForm.css';
+import PageTitle from '../common/PageTitle';
 
 const EnrollForm = () => {
   const [loading, setLoading] = useState(false);
@@ -133,6 +134,12 @@ const EnrollForm = () => {
 
   return (
     <div className="enroll-container">
+
+      <PageTitle 
+              title="Enroll Now "
+              description="British Institution - Empowering futures with IT, Language & Consultancy" 
+      />
+        
       <div className="enroll-wrappers">
         <div className="enroll-header">
           <h1>Enroll Now</h1>
