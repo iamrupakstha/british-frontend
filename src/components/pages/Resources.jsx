@@ -23,7 +23,9 @@ import StudentSuccess4 from '../../assets/images/students/visa-success8.jpg';
 import StudentSuccess5 from '../../assets/images/students/visa-success9.jpg';
 import StudentSuccess6 from '../../assets/images/students/visa-success10.jpg';
 import StudentSuccess7 from '../../assets/images/students/visa-success11.jpg';
-// Brochure Images
+import StudentSuccess8 from '../../assets/images/students/visa-success12.jpeg';
+import StudentSuccess9 from '../../assets/images/students/visa-success13.jpeg';
+
 
 // brochers
 import Brochure1 from '../../assets/images/resources/brocher_page-0001.jpg';
@@ -53,6 +55,8 @@ const Resources = () => {
     { id: 7, image: StudentSuccess5 },
     { id: 8, image: StudentSuccess6 },
     { id: 9, image: StudentSuccess7 },
+    { id: 10, image: StudentSuccess8 },
+    { id: 11, image: StudentSuccess9 },
   ];
 
   // ===== BROCHURE DATA =====

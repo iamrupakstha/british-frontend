@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaArrowLeft, FaFrown } from 'react-icons/fa';
 import PageTitle from '../common/PageTitle.jsx';
+import './css/NotFound.css';
 
 const NotFound = () => {
   return (

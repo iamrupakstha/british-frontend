@@ -134,10 +134,13 @@ function App() {
             <Route path="resources" element={<Resources />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="contact" element={<Contact />} />
+
+            {/* Page not found */}
+            <Route path="*" element={<NotFound />} />
+            
           </Route>
 
-          {/* Catch all */}
-          <Route path="*" element={<Navigate to="/" replace />} />
+          
         </Routes>
       </Router>
     </AuthProvider>
